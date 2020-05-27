@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synonyms and antonyms</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!--jquery first then popper.js and then bootstrap.js-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--font awesome js-->
+    <script src="https://kit.fontawesome.com/5dee0870d6.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--navigation-->
+    <div class="navbar navbar-expand-md navbar-light bg-primary sticky-top py-0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/logo_transparent.png"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mcq.html">MCQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#connect">Connect</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--image slider-->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <!--<li data-target="#slides" data-slide-to="2"></li>-->
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/library-488690_1280.jpg">
+                <div class="carousel-caption">
+                    <h1 class="display-2">Vocab Masters</h1>
+                    <h3>English for NDA/CDS</h3>
+                    <a href="#learnmore"><button type="button" class="btn btn-outline-light btn-lg">Learn more</button></a>
+                    <a href="mcq.html"><button type="button" class="btn btn-primary btn-lg">Get started</button></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/tea-time-3240766_1280.jpg">
+                <!--<div class="carousel-caption-sec">
+                    <h3>Your understanding of what you read and hear is, to a very large degree, 
+                        <br>determined by your vocabulary, so improve your vocabulary daily.     
+                        <br>-Winston Churchill
+                    </h3>                    
+                </div>-->
+            </div>
+            <!--<div class="carousel-item">
+                <img src="img/book-2304389_1280.jpg">
+                <div class="carousel-caption">
+                    <h3>Your understanding of what you read and hear is, to a very large degree, determined by your vocabulary, so improve your vocabulary daily.     
+                        <br>-Winston Churchill
+                    </h3>
+                </div>
+            </div>-->
+        </div>
+    </div>
+
+    <!--jumbotron-->
+    <div class="container-fluid">
+        <div class="row jumbotron">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                <p class="lead">
+                    Go through a million words with 10 words every day on our MCQ test.
+                </p>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                <a href="mcq.html"><button type="button" class="btn btn-outline-secondary btn-md">Get the test</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!--welcome section-->
+    <div class="container-fluid padding" id="learnmore">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-12">Learn new words with ease</h1>
+            </div>
+            <hr>
+            <div class="col-12">
+                <p class="lead">Welcome to vocab masters. 
+                     At vocab masters anyone can give our MCQ test everyday and learn new words everyday.
+                </p>
+            </div> 
+        </div>
+    </div>
+
+    <!--three column section-->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-exclamation"></i>
+                <h3>Updates</h3>
+                <p>Our MCQs are updated every single day so dont forget to check out new words everyday.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-book-reader"></i>
+                <h3>NDA/CDS</h3>
+                <p>Hone your skills in synonym's and antonym's</p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <i class="fas fa-sort-amount-up"></i>
+                <h3>Level UP</h3>
+                <p>Dont just memorize.Achieve mastery.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr class="light-100">
+    <!--about me/meet the team-->
+    <div class="container-fluid padding card-bg" id="team">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Meet the developer</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--cards-->
+    <div class="container-fluid padding card-bg">
+        <div class="row padding">
+            <div class="col-md-4 mx-auto">
+                <div class="card">
+                    <img class="card-img-top" src="img/team1.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Aakash Pacherkar</h4>
+                        <p class="card-text">Aakash is a Third year BSc Computer Science student and a web developer. Vocab masters is developed and maintained by Aakash.</p>
+                        <a class="btn btn-outline-secondary" href="#">See profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<hr class="my-4">-->
+    </div>
+    
+    <div class="container-fluid forbg">
+        <!--connect-->
+        <div class="container-fluid padding" id="connect">
+            <div class="row text-center padding">
+                <div class="col-12 connect">
+                <h2>Connect</h2>
+                </div>
+                <div class="col-12 social padding ">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCgvgxEO_cuz1PlSPxHS1Byg?guided_help_flow=3"><i class="fab fa-youtube"></i></a>    
+                    <a href="https://www.instagram.com/sandman_22840/"><i class="fab fa-instagram"></i></a>  
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer>
+            <div class="container-fluid padding" id="about">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <img src="img/logo_transparent.png" >
+                        <hr class="light">
+                        <p>555-555-5555</p>
+                        <p>aakashpacherkar@gmail.com</p>
+                        <p>Pune,Maharashtra</p>
+                    </div>
+                    <div class="col-md-4">
+                        <hr class="light-101">
+                        <h5>Our MCQ updates</h5>
+                        <hr class="light">
+                        <p>Monday to Saturday: 10am to 12pm</p>
+                        <p>Sunday: No updates on MCQ's</p>
+                    </div>
+                    <div class="col-md-4">
+                        <hr class="light-101">
+                        <h5>References for synonyms and antonyms</h5>
+                        <hr class="light">
+                        <p>Pathfinder for NDA/NA</p>
+                        <p>Pathfinder for CDS</p>
+                    </div>
+                    <div class="col-12">
+                        <hr class="light-100">
+                        <h5>&copy; vocab masters 2020 </h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
