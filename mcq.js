@@ -2,34 +2,111 @@ let questions =[
     {
         id:1,
         question:"Modest",
-        answer:"humble",
+        answer:"Humble",
         options: [
-            "hustle",
-            "hurry",
-            "humble",
-            "solemn",
+            "Attractive",
+            "Clever",
+            "Current",
+            "Humble",
         ]
     },
     {
         id:2,
         question:"Custom",
-        answer:"habbit",
+        answer:"Habit",
         options: [
-            "serious",
-            "imply",
-            "habbit",
-            "wander",
+            "Dessert",
+            "Habit",
+            "Ethic",
+            "Deliver",
         ]
     },
     {
         id:3,
         question:"Prolong",
-        answer:"extend",
+        answer:"Extend",
         options: [
-            "beneficial",
-            "extend",
-            "flare",
-            "blaze",
+            "Extend",
+            "Inquire",
+            "Relax",
+            "Wait",
+        ]
+    },
+    {
+        id:4,
+        question:"Hustle",
+        answer:"Hurry",
+        options: [
+            "Dance",
+            "Hurry",
+            "Busy",
+            "Clean",
+        ]
+    },
+    {
+        id:5,
+        question:"Solemn",
+        answer:"Serious",
+        options: [
+            "Amusing",
+            "Harmful",
+            "Speech",
+            "Serious",
+        ]
+    },
+    {
+        id:6,
+        question:"Imply",
+        answer:"Suggest",
+        options: [
+            "Suggest",
+            "Stab",
+            "Thick",
+            "Destroy",
+        ]
+    },
+    {
+        id:7,
+        question:"Ramble",
+        answer:"Wander",
+        options: [
+            "Knot",
+            "Confuse",
+            "Wander",
+            "Wonder",
+        ]
+    },
+    {
+        id:8,
+        question:"Beneficial",
+        answer:"Advantageous",
+        options: [
+            "Doleful",
+            "Advantageous",
+            "Playful",
+            "Ignoble",
+        ]
+    },
+    {
+        id:9,
+        question:"Flare",
+        answer:"Blaze",
+        options: [
+            "Judicial",
+            "Temper",
+            "Style",
+            "Blaze",
+        ]
+    },
+    {
+        id:10,
+        question:"Negligent",
+        answer:"Careless",
+        options: [
+            "Pajamas",
+            "Morbid",
+            "Careless",
+            "Dark",
         ]
     },
 ];
@@ -110,7 +187,7 @@ function next()
         document.getElementById("welcome").innerHTML="Well done! "+pname;
         document.getElementById("result").innerHTML=
         `<i class="fas fa-award"></i><br> 
-        <h6 class="scoretxt">Your Score : ${pscore} /3 </h6><br>
+        <h6 class="scoretxt">Your Score : ${pscore} /10 </h6><br>
         <hr class="light-100">`;
         
         res.classList.remove("hide");
@@ -139,18 +216,25 @@ function showanswers()
     showansbody1.classList.remove("hide");
     showansbody2.classList.remove("hide");
     showansbody3.classList.remove("hide");
+    showansbody4.classList.remove("hide");
+    showansbody5.classList.remove("hide");
+    showansbody6.classList.remove("hide");
+    showansbody7.classList.remove("hide");
+    showansbody8.classList.remove("hide");
+    showansbody9.classList.remove("hide");
+    showansbody10.classList.remove("hide");
     document.getElementById("welcome").innerHTML="Answers: ";
     //-------------------------------------------------------------
 
    
 
     document.getElementById("showansbody1").innerHTML=
-    `<h6 class="anstext">${questions[0].question}</h6>
+    `<h6 class="anstext">1.${questions[0].question}</h6>
         <ul>
-            1.<li class="btn btn-success que1">${questions[0].options[0]}</li><br>
+            1.<li class="btn btn-outline-light que1">${questions[0].options[0]}</li><br>
             2.<li class="btn btn-outline-light que1">${questions[0].options[1]}</li><br>
             3.<li class="btn btn-outline-light que1">${questions[0].options[2]}</li><br>
-            4.<li class="btn btn-outline-light que1">${questions[0].options[3]}</li><br>
+            4.<li class="btn btn-success que1">${questions[0].options[3]}</li><br>
         </ul>`;
 
         let wroptions=document.querySelectorAll("li.que1");
@@ -163,13 +247,12 @@ function showanswers()
                     console.log("inside if");     
                     wroptions[i].classList.add("wronganswer");
                     console.log(useransarray);
-                    console.log(wroptions);
                 }
             }
         }
         
     document.getElementById("showansbody2").innerHTML=
-    `<h6 class="anstext">${questions[1].question}</h6>
+    `<h6 class="anstext">2.${questions[1].question}</h6>
         <ul>
             1.<li class="btn btn-outline-light que2">${questions[1].options[0]}</li><br>
             2.<li class="btn btn-success que2">${questions[1].options[1]}</li><br>
@@ -186,16 +269,16 @@ function showanswers()
                 {
                     console.log("inside if");     
                     wroptions1[i].classList.add("wronganswer");
-                    console.log(wroptions);
+                    console.log(useransarray);
                 }
             }
         }
 
     document.getElementById("showansbody3").innerHTML=
-    `<h6 class="anstext">${questions[2].question}</h6>
+    `<h6 class="anstext">3.${questions[2].question}</h6>
     <ul>
-        1.<li class="btn btn-outline-light que3">${questions[2].options[0]}</li><br>
-        2.<li class="btn btn-success que3">${questions[2].options[1]}</li><br>
+        1.<li class="btn btn-success que3">${questions[2].options[0]}</li><br>
+        2.<li class="btn btn-outline-light que3">${questions[2].options[1]}</li><br>
         3.<li class="btn btn-outline-light que3">${questions[2].options[2]}</li><br>
         4.<li class="btn btn-outline-light que3">${questions[2].options[3]}</li><br>
     </ul>`;
@@ -209,11 +292,172 @@ function showanswers()
                 {
                     console.log("inside if");     
                     wroptions2[i].classList.add("wronganswer");
-                    console.log(wroptions);
+                    console.log(useransarray);
                 }
             }
         }
-    
+
+    document.getElementById("showansbody4").innerHTML=
+    `<h6 class="anstext">4.${questions[3].question}</h6>
+    <ul>
+        1.<li class="btn btn-outline-light que4">${questions[3].options[0]}</li><br>
+        2.<li class="btn btn-success que4">${questions[3].options[1]}</li><br>
+        3.<li class="btn btn-outline-light que4">${questions[3].options[2]}</li><br>
+        4.<li class="btn btn-outline-light que4">${questions[3].options[3]}</li><br>
+    </ul>`;
+
+        let wroptions3=document.querySelectorAll("li.que4");
+        for(let i=0;i< wroptions3.length;i++)
+        {
+            for(let j=0;j< useransarray.length;j++)
+            {
+                if(useransarray[j] == questions[3].options[i])
+                {
+                    console.log("inside if");     
+                    wroptions3[i].classList.add("wronganswer");
+                    console.log(useransarray);
+                }
+            }
+        }
+
+    document.getElementById("showansbody5").innerHTML=
+    `<h6 class="anstext">5.${questions[4].question}</h6>
+    <ul>
+        1.<li class="btn btn-outline-light que5">${questions[4].options[0]}</li><br>
+        2.<li class="btn btn-outline-light que5">${questions[4].options[1]}</li><br>
+        3.<li class="btn btn-outline-light que5">${questions[4].options[2]}</li><br>
+        4.<li class="btn btn-success que5">${questions[4].options[3]}</li><br>
+    </ul>`;
+
+        let wroptions4=document.querySelectorAll("li.que5");
+        for(let i=0;i< wroptions4.length;i++)
+        {
+            for(let j=0;j< useransarray.length;j++)
+            {
+                if(useransarray[j] == questions[4].options[i])
+                {
+                    console.log("inside if");     
+                    wroptions4[i].classList.add("wronganswer");
+                    console.log(useransarray);
+                }
+            }
+        }
+
+    document.getElementById("showansbody6").innerHTML=
+    `<h6 class="anstext">6.${questions[5].question}</h6>
+    <ul>
+        1.<li class="btn btn-success que6">${questions[5].options[0]}</li><br>
+        2.<li class="btn btn-outline-light que6">${questions[5].options[1]}</li><br>
+        3.<li class="btn btn-outline-light que6">${questions[5].options[2]}</li><br>
+        4.<li class="btn btn-outline-light que6">${questions[5].options[3]}</li><br>
+    </ul>`;
+
+        let wroptions5=document.querySelectorAll("li.que6");
+        for(let i=0;i< wroptions5.length;i++)
+        {
+            for(let j=0;j< useransarray.length;j++)
+            {
+                if(useransarray[j] == questions[5].options[i])
+                {
+                    console.log("inside if");     
+                    wroptions5[i].classList.add("wronganswer");
+                    console.log(useransarray);
+                }
+            }
+        }
+
+    document.getElementById("showansbody7").innerHTML=
+    `<h6 class="anstext">7.${questions[6].question}</h6>
+    <ul>
+        1.<li class="btn btn-outline-light que7">${questions[6].options[0]}</li><br>
+        2.<li class="btn btn-outline-light que7">${questions[6].options[1]}</li><br>
+        3.<li class="btn btn-success que7">${questions[6].options[2]}</li><br>
+        4.<li class="btn btn-outline-light que7">${questions[6].options[3]}</li><br>
+    </ul>`;
+
+        let wroptions6=document.querySelectorAll("li.que7");
+        for(let i=0;i< wroptions6.length;i++)
+        {
+            for(let j=0;j< useransarray.length;j++)
+            {
+                if(useransarray[j] == questions[6].options[i])
+                {
+                    console.log("inside if");     
+                    wroptions6[i].classList.add("wronganswer");
+                    console.log(useransarray);
+                }
+            }
+        }
+
+    document.getElementById("showansbody8").innerHTML=
+    `<h6 class="anstext">8.${questions[7].question}</h6>
+    <ul>
+        1.<li class="btn btn-outline-light que8">${questions[7].options[0]}</li><br>
+        2.<li class="btn btn-success que8">${questions[7].options[1]}</li><br>
+        3.<li class="btn btn-outline-light que8">${questions[7].options[2]}</li><br>
+        4.<li class="btn btn-outline-light que8">${questions[7].options[3]}</li><br>
+    </ul>`;
+
+        let wroptions7=document.querySelectorAll("li.que8");
+        for(let i=0;i< wroptions7.length;i++)
+        {
+            for(let j=0;j< useransarray.length;j++)
+            {
+                if(useransarray[j] == questions[7].options[i])
+                {
+                    console.log("inside if");     
+                    wroptions7[i].classList.add("wronganswer");
+                    console.log(useransarray);
+                }
+            }
+        }
+        
+    document.getElementById("showansbody9").innerHTML=
+    `<h6 class="anstext">9.${questions[8].question}</h6>
+    <ul>
+        1.<li class="btn btn-outline-light que9">${questions[8].options[0]}</li><br>
+        2.<li class="btn btn-outline-light que9">${questions[8].options[1]}</li><br>
+        3.<li class="btn btn-outline-light que9">${questions[8].options[2]}</li><br>
+        4.<li class="btn btn-success que9">${questions[8].options[3]}</li><br>
+    </ul>`;
+
+        let wroptions8=document.querySelectorAll("li.que9");
+        for(let i=0;i< wroptions8.length;i++)
+        {
+            for(let j=0;j< useransarray.length;j++)
+            {
+                if(useransarray[j] == questions[8].options[i])
+                {
+                    console.log("inside if");     
+                    wroptions8[i].classList.add("wronganswer");
+                    console.log(useransarray);
+                }
+            }
+        }
+
+    document.getElementById("showansbody10").innerHTML=
+    `<h6 class="anstext">10.${questions[9].question}</h6>
+    <ul>
+        1.<li class="btn btn-outline-light que10">${questions[9].options[0]}</li><br>
+        2.<li class="btn btn-outline-light que10">${questions[9].options[1]}</li><br>
+        3.<li class="btn btn-success que10">${questions[9].options[2]}</li><br>
+        4.<li class="btn btn-outline-light que10">${questions[9].options[3]}</li><br>
+    </ul>`;
+
+        let wroptions9=document.querySelectorAll("li.que10");
+        for(let i=0;i< wroptions9.length;i++)
+        {
+            for(let j=0;j< useransarray.length;j++)
+            {
+                if(useransarray[j] == questions[9].options[i])
+                {
+                    console.log("inside if");     
+                    wroptions9[i].classList.add("wronganswer");
+                    console.log(useransarray);
+                }
+            }
+        }
+
     tryagainbtn.classList.remove("hide");
 }
 

@@ -173,7 +173,7 @@ hr.light-101{
     padding: .3rem;
     border-radius: 15px;
 }
-.que1, .que2, .que3{
+.que1, .que2, .que3, .que4, .que5, .que6, .que7, .que8, .que9, .que10{
     margin: 3px;
     padding: .3rem;
     border-radius: 15px;
@@ -245,18 +245,18 @@ hr.light-101{
 
 @media (max-width:576px){
     .carousel-caption {
-        top: 10%;
+        top: 3%;
     }
     .carousel-caption h1{
-        font-size: 250%;
+        font-size: 300%;
         text-transform: uppercase;
     }
     .carousel-caption h3{
-        font-size: 110%;
+        font-size: 130%;
     }
     .carousel-caption .btn{
-        font-size: 90%;
-        padding: 4px 8px;
+        font-size: 95%;
+        padding: 7px 11px;
     }
     .carousel-indicators{
         display: none;
@@ -266,6 +266,6 @@ hr.light-101{
     }
     .social a{
         font-size: 2rem;
-        padding: 1.7rem;
+        padding: 1.5rem;
     }
 }
