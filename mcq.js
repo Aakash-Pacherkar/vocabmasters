@@ -194,8 +194,8 @@ function showanswers()
     document.getElementById("showansbody3").innerHTML=
     `<h6 class="anstext">${questions[2].question}</h6>
     <ul>
-        1.<li class="btn btn-success que3">${questions[2].options[0]}</li><br>
-        2.<li class="btn btn-outline-light que3">${questions[2].options[1]}</li><br>
+        1.<li class="btn btn-outline-light que3">${questions[2].options[0]}</li><br>
+        2.<li class="btn btn-success que3">${questions[2].options[1]}</li><br>
         3.<li class="btn btn-outline-light que3">${questions[2].options[2]}</li><br>
         4.<li class="btn btn-outline-light que3">${questions[2].options[3]}</li><br>
     </ul>`;
