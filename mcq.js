@@ -1,112 +1,112 @@
 let questions =[
     {
         id:1,
-        question:"Modest",
-        answer:"Humble",
+        question:"Aloof",
+        answer:"Reserved",
         options: [
-            "Attractive",
+            "Above",
+            "Tidy",
             "Clever",
-            "Current",
-            "Humble",
+            "Reserved",
         ]
     },
     {
         id:2,
-        question:"Custom",
-        answer:"Habit",
+        question:"Resolve",
+        answer:"Decide",
         options: [
-            "Dessert",
-            "Habit",
-            "Ethic",
-            "Deliver",
+            "Turn",
+            "Puzzle",
+            "Decide",
+            "Want",
         ]
     },
     {
         id:3,
-        question:"Prolong",
-        answer:"Extend",
+        question:"Congregate",
+        answer:"Gather",
         options: [
-            "Extend",
-            "Inquire",
-            "Relax",
-            "Wait",
+            "Worship",
+            "Gather",
+            "Disturb",
+            "Hurry",
         ]
     },
     {
         id:4,
-        question:"Hustle",
-        answer:"Hurry",
+        question:"Utter",
+        answer:"Express",
         options: [
-            "Dance",
-            "Hurry",
-            "Busy",
-            "Clean",
+            "Express",
+            "Defer",
+            "Borrow",
+            "Laugh",
         ]
     },
     {
         id:5,
-        question:"Solemn",
-        answer:"Serious",
+        question:"Fearless",
+        answer:"Brave",
         options: [
-            "Amusing",
-            "Harmful",
-            "Speech",
-            "Serious",
+            "Powerful",
+            "Cowardly",
+            "Brave",
+            "Careful",
         ]
     },
     {
         id:6,
-        question:"Imply",
-        answer:"Suggest",
+        question:"Negligible",
+        answer:"Insignificant",
         options: [
-            "Suggest",
-            "Stab",
-            "Thick",
-            "Destroy",
+            "Insignificant",
+            "Arguable",
+            "Careless",
+            "Dark",
         ]
     },
     {
         id:7,
-        question:"Ramble",
-        answer:"Wander",
+        question:"Placid",
+        answer:"Calm",
         options: [
-            "Knot",
-            "Confuse",
-            "Wander",
-            "Wonder",
+            "Calm",
+            "Lazy",
+            "Solemn",
+            "Devious",
         ]
     },
     {
         id:8,
-        question:"Beneficial",
-        answer:"Advantageous",
+        question:"Rake",
+        answer:"Scoundrel",
         options: [
-            "Doleful",
-            "Advantageous",
-            "Playful",
-            "Ignoble",
+            "Thin",
+            "Scoundrel",
+            "Gentleman",
+            "Shove",
         ]
     },
     {
         id:9,
-        question:"Flare",
-        answer:"Blaze",
+        question:"Dupe",
+        answer:"Trick",
         options: [
-            "Judicial",
-            "Temper",
-            "Style",
-            "Blaze",
+            "Rancher",
+            "Trick",
+            "Simpleton",
+            "Drug",
         ]
     },
     {
         id:10,
-        question:"Negligent",
-        answer:"Careless",
+        question:"Stigma",
+        answer:"Stain",
         options: [
-            "Pajamas",
-            "Morbid",
-            "Careless",
-            "Dark",
+            "Stain",
+            "Trial",
+            "Difficulty",
+            "Holiness",
         ]
     },
 ];
@@ -255,8 +255,8 @@ function showanswers()
     `<h6 class="anstext">2.${questions[1].question}</h6>
         <ul>
             1.<li class="btn btn-outline-light que2">${questions[1].options[0]}</li><br>
-            2.<li class="btn btn-success que2">${questions[1].options[1]}</li><br>
-            3.<li class="btn btn-outline-light que2">${questions[1].options[2]}</li><br>
+            2.<li class="btn btn-outline-light que2">${questions[1].options[1]}</li><br>
+            3.<li class="btn btn-success que2">${questions[1].options[2]}</li><br>
             4.<li class="btn btn-outline-light que2">${questions[1].options[3]}</li><br>
         </ul>`;
         
@@ -277,8 +277,8 @@ function showanswers()
     document.getElementById("showansbody3").innerHTML=
     `<h6 class="anstext">3.${questions[2].question}</h6>
     <ul>
-        1.<li class="btn btn-success que3">${questions[2].options[0]}</li><br>
-        2.<li class="btn btn-outline-light que3">${questions[2].options[1]}</li><br>
+        1.<li class="btn btn-outline-light que3">${questions[2].options[0]}</li><br>
+        2.<li class="btn btn-success que3">${questions[2].options[1]}</li><br>
         3.<li class="btn btn-outline-light que3">${questions[2].options[2]}</li><br>
         4.<li class="btn btn-outline-light que3">${questions[2].options[3]}</li><br>
     </ul>`;
@@ -300,8 +300,8 @@ function showanswers()
     document.getElementById("showansbody4").innerHTML=
     `<h6 class="anstext">4.${questions[3].question}</h6>
     <ul>
-        1.<li class="btn btn-outline-light que4">${questions[3].options[0]}</li><br>
-        2.<li class="btn btn-success que4">${questions[3].options[1]}</li><br>
+        1.<li class="btn btn-success que4">${questions[3].options[0]}</li><br>
+        2.<li class="btn btn-outline-light que4">${questions[3].options[1]}</li><br>
         3.<li class="btn btn-outline-light que4">${questions[3].options[2]}</li><br>
         4.<li class="btn btn-outline-light que4">${questions[3].options[3]}</li><br>
     </ul>`;
@@ -325,8 +325,8 @@ function showanswers()
     <ul>
         1.<li class="btn btn-outline-light que5">${questions[4].options[0]}</li><br>
         2.<li class="btn btn-outline-light que5">${questions[4].options[1]}</li><br>
-        3.<li class="btn btn-outline-light que5">${questions[4].options[2]}</li><br>
-        4.<li class="btn btn-success que5">${questions[4].options[3]}</li><br>
+        3.<li class="btn btn-success que5">${questions[4].options[2]}</li><br>
+        4.<li class="btn btn-outline-light que5">${questions[4].options[3]}</li><br>
     </ul>`;
 
         let wroptions4=document.querySelectorAll("li.que5");
@@ -369,9 +369,9 @@ function showanswers()
     document.getElementById("showansbody7").innerHTML=
     `<h6 class="anstext">7.${questions[6].question}</h6>
     <ul>
-        1.<li class="btn btn-outline-light que7">${questions[6].options[0]}</li><br>
+        1.<li class="btn btn-success que7">${questions[6].options[0]}</li><br>
         2.<li class="btn btn-outline-light que7">${questions[6].options[1]}</li><br>
-        3.<li class="btn btn-success que7">${questions[6].options[2]}</li><br>
+        3.<li class="btn btn-outline-light que7">${questions[6].options[2]}</li><br>
         4.<li class="btn btn-outline-light que7">${questions[6].options[3]}</li><br>
     </ul>`;
 
@@ -416,9 +416,9 @@ function showanswers()
     `<h6 class="anstext">9.${questions[8].question}</h6>
     <ul>
         1.<li class="btn btn-outline-light que9">${questions[8].options[0]}</li><br>
-        2.<li class="btn btn-outline-light que9">${questions[8].options[1]}</li><br>
+        2.<li class="btn btn-success que9">${questions[8].options[1]}</li><br>
         3.<li class="btn btn-outline-light que9">${questions[8].options[2]}</li><br>
-        4.<li class="btn btn-success que9">${questions[8].options[3]}</li><br>
+        4.<li class="btn btn-outline-light que9">${questions[8].options[3]}</li><br>
     </ul>`;
 
         let wroptions8=document.querySelectorAll("li.que9");
@@ -438,9 +438,9 @@ function showanswers()
     document.getElementById("showansbody10").innerHTML=
     `<h6 class="anstext">10.${questions[9].question}</h6>
     <ul>
-        1.<li class="btn btn-outline-light que10">${questions[9].options[0]}</li><br>
+        1.<li class="btn btn-success que10">${questions[9].options[0]}</li><br>
         2.<li class="btn btn-outline-light que10">${questions[9].options[1]}</li><br>
-        3.<li class="btn btn-success que10">${questions[9].options[2]}</li><br>
+        3.<li class="btn btn-outline-light que10">${questions[9].options[2]}</li><br>
         4.<li class="btn btn-outline-light que10">${questions[9].options[3]}</li><br>
     </ul>`;
 
