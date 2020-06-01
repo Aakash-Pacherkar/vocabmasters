@@ -1,112 +1,112 @@
 let questions =[
     {
         id:1,
-        question:"Reside",
-        answer:"Dwell",
+        question:"Abject",
+        answer:"Extreme",
         options: [
-            "Remain",
-            "Home",
-            "Dwell",
-            "Sediment",
+            "Indigent",
+            "Desire",
+            "Deplorable",
+            "Extreme",
         ]
     },
     {
         id:2,
-        question:"Covetous",
-        answer:"Greedy",
+        question:"Bespoke",
+        answer:"Tailored",
         options: [
-            "Quite",
-            "Sneaky",
-            "Lurking",
-            "Greedy",
+            "Gentle",
+            "Quiet",
+            "Tailored",
+            "Handsome",
         ]
     },
     {
         id:3,
-        question:"Abide",
-        answer:"Endure",
+        question:"Diffident",
+        answer:"Arrogant",
         options: [
-            "Endure",
-            "Hate",
-            "Attendance",
-            "Live",
+            "Apathetic",
+            "Shy",
+            "Arrogant",
+            "Quarrelsome",
         ]
     },
     {
         id:4,
-        question:"Shrewd",
-        answer:"Astute",
+        question:"Proffer",
+        answer:"Tender",
         options: [
-            "Intractable",
-            "Mean",
-            "Astute",
-            "Intelligent",
+            "Mendicant",
+            "Wastrel",
+            "Predict",
+            "Tender",
         ]
     },
     {
         id:5,
-        question:"Fetter",
-        answer:"Hamper",
+        question:"Mordant",
+        answer:"Caustic",
         options: [
-            "Rancide",
-            "Praise",
-            "Hamper",
-            "Persist",
+            "Dead",
+            "Gruesome",
+            "Fetid",
+            "Caustic",
         ]
     },
     {
         id:6,
-        question:"Flagrant",
-        answer:"Glaring",
+        question:"Churlish",
+        answer:"Boorish",
         options: [
-            "Vibrant",
-            "Glaring",
-            "Vicious",
-            "Pleasant",
+            "Childish",
+            "Boorish",
+            "Tempestuous",
+            "Disorderly",
         ]
     },
     {
         id:7,
-        question:"Mitigate",
-        answer:"Relieve",
+        question:"Antediluvian",
+        answer:"Antiquated",
         options: [
-            "Relieve",
-            "Blend",
-            "Defend",
-            "Confuse",
+            "Antiquated",
+            "Parched",
+            "Non-sectarian",
+            "Non-sensical",
         ]
     },
     {
         id:8,
-        question:"Rail",
-        answer:"Scold",
+        question:"Picayune",
+        answer:"Petty",
         options: [
-            "Scold",
-            "Push",
-            "Try",
-            "Punish",
+            "Petty",
+            "Spicy",
+            "Paltry",
+            "Southern",
         ]
     },
     {
         id:9,
-        question:"Meld",
-        answer:"Blend",
+        question:"Smite",
+        answer:"Strike",
         options: [
-            "Character",
-            "Distinction",
-            "Blend",
-            "Firmness",
+            "Flee",
+            "Speck",
+            "Dirt",
+            "Strike",
         ]
     },
     {
         id:10,
-        question:"Rally",
-        answer:"Muster",
+        question:"Winnow",
+        answer:"Weed",
         options: [
-            "Demonstrate",
-            "Muster",
-            "Course",
-            "Truly",
+            "Crave",
+            "Wind",
+            "Weed",
+            "Carry",
         ]
     },
 ];
@@ -233,8 +233,8 @@ function showanswers()
         <ul>
             1.<li class="btn btn-outline-light que1">${questions[0].options[0]}</li><br>
             2.<li class="btn btn-outline-light que1">${questions[0].options[1]}</li><br>
-            3.<li class="btn btn-success que1">${questions[0].options[2]}</li><br>
-            4.<li class="btn btn-outline-light que1">${questions[0].options[3]}</li><br>
+            3.<li class="btn btn-outline-light que1">${questions[0].options[2]}</li><br>
+            4.<li class="btn btn-success que1">${questions[0].options[3]}</li><br>
         </ul>`;
 
         let wroptions=document.querySelectorAll("li.que1");
@@ -256,8 +256,8 @@ function showanswers()
         <ul>
             1.<li class="btn btn-outline-light que2">${questions[1].options[0]}</li><br>
             2.<li class="btn btn-outline-light que2">${questions[1].options[1]}</li><br>
-            3.<li class="btn btn-outline-light que2">${questions[1].options[2]}</li><br>
-            4.<li class="btn btn-success que2">${questions[1].options[3]}</li><br>
+            3.<li class="btn btn-success que2">${questions[1].options[2]}</li><br>
+            4.<li class="btn btn-outline-light que2">${questions[1].options[3]}</li><br>
         </ul>`;
         
         let wroptions1=document.querySelectorAll("li.que2");
@@ -277,9 +277,9 @@ function showanswers()
     document.getElementById("showansbody3").innerHTML=
     `<h6 class="anstext">3.${questions[2].question}</h6>
     <ul>
-        1.<li class="btn btn-success que3">${questions[2].options[0]}</li><br>
+        1.<li class="btn btn-outline-light que3">${questions[2].options[0]}</li><br>
         2.<li class="btn btn-outline-light que3">${questions[2].options[1]}</li><br>
-        3.<li class="btn btn-outline-light que3">${questions[2].options[2]}</li><br>
+        3.<li class="btn btn-success que3">${questions[2].options[2]}</li><br>
         4.<li class="btn btn-outline-light que3">${questions[2].options[3]}</li><br>
     </ul>`;
 
@@ -302,8 +302,8 @@ function showanswers()
     <ul>
         1.<li class="btn btn-outline-light que4">${questions[3].options[0]}</li><br>
         2.<li class="btn btn-outline-light que4">${questions[3].options[1]}</li><br>
-        3.<li class="btn btn-success que4">${questions[3].options[2]}</li><br>
-        4.<li class="btn btn-outline-light que4">${questions[3].options[3]}</li><br>
+        3.<li class="btn btn-outline-light que4">${questions[3].options[2]}</li><br>
+        4.<li class="btn btn-success que4">${questions[3].options[3]}</li><br>
     </ul>`;
 
         let wroptions3=document.querySelectorAll("li.que4");
@@ -325,8 +325,8 @@ function showanswers()
     <ul>
         1.<li class="btn btn-outline-light que5">${questions[4].options[0]}</li><br>
         2.<li class="btn btn-outline-light que5">${questions[4].options[1]}</li><br>
-        3.<li class="btn btn-success que5">${questions[4].options[2]}</li><br>
-        4.<li class="btn btn-outline-light que5">${questions[4].options[3]}</li><br>
+        3.<li class="btn btn-outline-light que5">${questions[4].options[2]}</li><br>
+        4.<li class="btn btn-success que5">${questions[4].options[3]}</li><br>
     </ul>`;
 
         let wroptions4=document.querySelectorAll("li.que5");
@@ -417,8 +417,8 @@ function showanswers()
     <ul>
         1.<li class="btn btn-outline-light que9">${questions[8].options[0]}</li><br>
         2.<li class="btn btn-outline-light que9">${questions[8].options[1]}</li><br>
-        3.<li class="btn btn-success que9">${questions[8].options[2]}</li><br>
-        4.<li class="btn btn-outline-light que9">${questions[8].options[3]}</li><br>
+        3.<li class="btn btn-outline-light que9">${questions[8].options[2]}</li><br>
+        4.<li class="btn btn-success que9">${questions[8].options[3]}</li><br>
     </ul>`;
 
         let wroptions8=document.querySelectorAll("li.que9");
@@ -439,8 +439,8 @@ function showanswers()
     `<h6 class="anstext">10.${questions[9].question}</h6>
     <ul>
         1.<li class="btn btn-outline-light que10">${questions[9].options[0]}</li><br>
-        2.<li class="btn btn-success que10">${questions[9].options[1]}</li><br>
-        3.<li class="btn btn-outline-light que10">${questions[9].options[2]}</li><br>
+        2.<li class="btn btn-outline-light que10">${questions[9].options[1]}</li><br>
+        3.<li class="btn btn-success que10">${questions[9].options[2]}</li><br>
         4.<li class="btn btn-outline-light que10">${questions[9].options[3]}</li><br>
     </ul>`;
 
