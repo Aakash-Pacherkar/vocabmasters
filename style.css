@@ -169,8 +169,8 @@ hr.light-101{
     box-shadow: 1px 1px 10px black;
 }
 .q1{
-    margin: 3px;
-    padding: .3rem;
+    margin: 4px;
+    padding: .4rem;
     border-radius: 15px;
 }
 .que1, .que2, .que3, .que4, .que5, .que6, .que7, .que8, .que9, .que10{
@@ -203,9 +203,13 @@ hr.light-101{
     margin: 0;
 }
 .wronganswer{
-    background-color: red ;
+    background-color: rgb(175, 0, 0) ;
     color: white;
-    border-color: red;
+    border-color: rgb(143, 0, 0);
+}
+.card-footer-img{
+    height: 2.7rem;
+    width: auto;
 }
 /*----------Media queries----------*/
 
