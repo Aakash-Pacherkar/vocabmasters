@@ -1,112 +1,112 @@
 let questions =[
     {
         id:1,
-        question:"Traipse",
-        answer:"Move reluctantly",
+        question:"Pulverise",
+        answer:"Reduce to fine particles",
         options: [
-            "Run",
-            "Sleep",
-            "Laze around",
-            "Move reluctantly",
+            "Celebrate",
+            "Condemn publically",
+            "Confiscate",
+            "Reduce to fine particles",
         ]
     },
     {
         id:2,
-        question:"Munificence",
-        answer:"Being very generous",
+        question:"Bucolic",
+        answer:"Rural",
         options: [
-            "Being too proud",
-            "Being too honest",
-            "Being very generous",
-            "Being very stingy",
+            "Urban",
+            "Foreign",
+            "Middle-class",
+            "Rural",
         ]
     },
     {
         id:3,
-        question:"Embellish",
-        answer:"Decorate",
+        question:"Snare",
+        answer:"Trap",
         options: [
-            "Spoil",
-            "Decorate",
-            "Bother",
-            "Facilitate",
+            "Trap",
+            "Rest house",
+            "Release",
+            "Alley",
         ]
     },
     {
         id:4,
-        question:"Bask",
-        answer:"Lie exposed to warmth",
+        question:"Littoral",
+        answer:"Situated on the mountain",
         options: [
-            "Lie exposed to warmth",
-            "Lie exposed to cold",
-            "Boast",
-            "Basket",
+            "Literal",
+            "Situated on the shore",
+            "Situated on the mountain",
+            "Pictoral",
         ]
     },
     {
         id:5,
-        question:"Skittish",
-        answer:"Nervous",
+        question:"Hubbub",
+        answer:"Noisy situation",
         options: [
-            "Nervous",
-            "Confident",
-            "Clever",
-            "Contradicting",
+            "Calm",
+            "Network",
+            "Noisy situation",
+            "A device",
         ]
     },
     {
         id:6,
-        question:"Seamless",
-        answer:"Smooth and continuous",
+        question:"Accost",
+        answer:"To address someone boldly",
         options: [
-            "Horrid",
-            "Smooth and continuous",
-            "Succulent",
-            "Rough",
+            "To address someone politely",
+            "To demonetise",
+            "To cheat someone",
+            "To address someone boldly",
         ]
     },
     {
         id:7,
-        question:"Inquitous",
-        answer:"Sinful",
+        question:"Beguiling",
+        answer:"Enchanting",
         options: [
-            "Sinful",
-            "Remorseful",
-            "Curious",
-            "Argumentative",
+            "Accusing",
+            "Enchanting",
+            "Surviving",
+            "Repulsive",
         ]
     },
     {
         id:8,
-        question:"Implode",
-        answer:"Collapse inwards",
+        question:"Slobber",
+        answer:"Salivating",
         options: [
-            "Shake",
-            "Collapse outwards",
-            "Collapse inwards",
-            "Soothe",
+            "Sobbing",
+            "Salivating",
+            "Revolting",
+            "Confusing",
         ]
     },
     {
         id:9,
-        question:"Impugin",
-        answer:"Challenge",
+        question:"Gregarious",
+        answer:"Sociable",
         options: [
-            "Praise",
-            "Custom",
-            "Purge",
-            "Challenge",
+            "Garrulous",
+            "Determined",
+            "Sociable",
+            "Aloof",
         ]
     },
     {
         id:10,
-        question:"Banquet",
-        answer:"Formal evening meal",
+        question:"Rejoinder",
+        answer:"A witty reply",
         options: [
-            "Lunch",
-            "Fast",
-            "Formal evening meal",
-            "Breakfast",
+            "A witty reply",
+            "To rejoin",
+            "Strengthen",
+            "Socialise",
         ]
     },
 ];
@@ -256,8 +256,8 @@ function showanswers()
         <ul>
             1.<li class="btn btn-outline-light que2">${questions[1].options[0]}</li><br>
             2.<li class="btn btn-outline-light que2">${questions[1].options[1]}</li><br>
-            3.<li class="btn btn-success que2">${questions[1].options[2]}</li><br>
-            4.<li class="btn btn-outline-light que2">${questions[1].options[3]}</li><br>
+            3.<li class="btn btn-outline-light que2">${questions[1].options[2]}</li><br>
+            4.<li class="btn btn-success que2">${questions[1].options[3]}</li><br>
         </ul>`;
         
         let wroptions1=document.querySelectorAll("li.que2");
@@ -277,8 +277,8 @@ function showanswers()
     document.getElementById("showansbody3").innerHTML=
     `<h6 class="anstext">3.${questions[2].question}</h6>
     <ul>
-        1.<li class="btn btn-outline-light que3">${questions[2].options[0]}</li><br>
-        2.<li class="btn btn-success que3">${questions[2].options[1]}</li><br>
+        1.<li class="btn btn-success que3">${questions[2].options[0]}</li><br>
+        2.<li class="btn btn-outline-light que3">${questions[2].options[1]}</li><br>
         3.<li class="btn btn-outline-light que3">${questions[2].options[2]}</li><br>
         4.<li class="btn btn-outline-light que3">${questions[2].options[3]}</li><br>
     </ul>`;
@@ -300,9 +300,9 @@ function showanswers()
     document.getElementById("showansbody4").innerHTML=
     `<h6 class="anstext">4.${questions[3].question}</h6>
     <ul>
-        1.<li class="btn btn-success que4">${questions[3].options[0]}</li><br>
+        1.<li class="btn btn-outline-light que4">${questions[3].options[0]}</li><br>
         2.<li class="btn btn-outline-light que4">${questions[3].options[1]}</li><br>
-        3.<li class="btn btn-outline-light que4">${questions[3].options[2]}</li><br>
+        3.<li class="btn btn-success que4">${questions[3].options[2]}</li><br>
         4.<li class="btn btn-outline-light que4">${questions[3].options[3]}</li><br>
     </ul>`;
 
@@ -323,9 +323,9 @@ function showanswers()
     document.getElementById("showansbody5").innerHTML=
     `<h6 class="anstext">5.${questions[4].question}</h6>
     <ul>
-        1.<li class="btn btn-success que5">${questions[4].options[0]}</li><br>
+        1.<li class="btn btn-outline-light que5">${questions[4].options[0]}</li><br>
         2.<li class="btn btn-outline-light que5">${questions[4].options[1]}</li><br>
-        3.<li class="btn btn-outline-light que5">${questions[4].options[2]}</li><br>
+        3.<li class="btn btn-success que5">${questions[4].options[2]}</li><br>
         4.<li class="btn btn-outline-light que5">${questions[4].options[3]}</li><br>
     </ul>`;
 
@@ -347,9 +347,9 @@ function showanswers()
     `<h6 class="anstext">6.${questions[5].question}</h6>
     <ul>
         1.<li class="btn btn-outline-light que6">${questions[5].options[0]}</li><br>
-        2.<li class="btn btn-success que6">${questions[5].options[1]}</li><br>
+        2.<li class="btn btn-outline-light que6">${questions[5].options[1]}</li><br>
         3.<li class="btn btn-outline-light que6">${questions[5].options[2]}</li><br>
-        4.<li class="btn btn-outline-light que6">${questions[5].options[3]}</li><br>
+        4.<li class="btn btn-success que6">${questions[5].options[3]}</li><br>
     </ul>`;
 
         let wroptions5=document.querySelectorAll("li.que6");
@@ -369,8 +369,8 @@ function showanswers()
     document.getElementById("showansbody7").innerHTML=
     `<h6 class="anstext">7.${questions[6].question}</h6>
     <ul>
-        1.<li class="btn btn-success que7">${questions[6].options[0]}</li><br>
-        2.<li class="btn btn-outline-light que7">${questions[6].options[1]}</li><br>
+        1.<li class="btn btn-outline-light que7">${questions[6].options[0]}</li><br>
+        2.<li class="btn btn-success que7">${questions[6].options[1]}</li><br>
         3.<li class="btn btn-outline-light que7">${questions[6].options[2]}</li><br>
         4.<li class="btn btn-outline-light que7">${questions[6].options[3]}</li><br>
     </ul>`;
@@ -393,8 +393,8 @@ function showanswers()
     `<h6 class="anstext">8.${questions[7].question}</h6>
     <ul>
         1.<li class="btn btn-outline-light que8">${questions[7].options[0]}</li><br>
-        2.<li class="btn btn-outline-light que8">${questions[7].options[1]}</li><br>
-        3.<li class="btn btn-success que8">${questions[7].options[2]}</li><br>
+        2.<li class="btn btn-success que8">${questions[7].options[1]}</li><br>
+        3.<li class="btn btn-outline-light que8">${questions[7].options[2]}</li><br>
         4.<li class="btn btn-outline-light que8">${questions[7].options[3]}</li><br>
     </ul>`;
 
@@ -417,8 +417,8 @@ function showanswers()
     <ul>
         1.<li class="btn btn-outline-light que9">${questions[8].options[0]}</li><br>
         2.<li class="btn btn-outline-light que9">${questions[8].options[1]}</li><br>
-        3.<li class="btn btn-outline-light que9">${questions[8].options[2]}</li><br>
-        4.<li class="btn btn-success que9">${questions[8].options[3]}</li><br>
+        3.<li class="btn btn-success que9">${questions[8].options[2]}</li><br>
+        4.<li class="btn btn-outline-light que9">${questions[8].options[3]}</li><br>
     </ul>`;
 
         let wroptions8=document.querySelectorAll("li.que9");
@@ -438,9 +438,9 @@ function showanswers()
     document.getElementById("showansbody10").innerHTML=
     `<h6 class="anstext">10.${questions[9].question}</h6>
     <ul>
-        1.<li class="btn btn-outline-light que10">${questions[9].options[0]}</li><br>
+        1.<li class="btn btn-success que10">${questions[9].options[0]}</li><br>
         2.<li class="btn btn-outline-light que10">${questions[9].options[1]}</li><br>
-        3.<li class="btn btn-success que10">${questions[9].options[2]}</li><br>
+        3.<li class="btn btn-outline-light que10">${questions[9].options[2]}</li><br>
         4.<li class="btn btn-outline-light que10">${questions[9].options[3]}</li><br>
     </ul>`;
 
