@@ -1,112 +1,112 @@
 let questions =[
     {
         id:1,
-        question:"Wistle-Blower",
-        answer:"Informer",
+        question:"Impervious",
+        answer:"Unaffected",
         options: [
-            "A down",
-            "Informer",
-            "A maniac",
-            "Reformer",
+            "Impenetrable",
+            "Unaffected",
+            "Unstoppable",
+            "Unmindful",
         ]
     },
     {
         id:2,
-        question:"Tranche",
-        answer:"A portion of money",
+        question:"Elicit",
+        answer:"Evoke",
         options: [
-            "A portion of money",
-            "Waste",
-            "Trance",
-            "Pit",
+            "Evoke",
+            "Wrest",
+            "Obtain",
+            "Extort",
         ]
     },
     {
         id:3,
-        question:"Angling",
-        answer:"Activity of catching fish",
+        question:"Lucrative",
+        answer:"Profitable",
         options: [
-            "Activity of hunting",
-            "Activity of catching rats",
-            "Activity of catching fish",
-            "Planning",
+            "Risky",
+            "Profitable",
+            "Honourable",
+            "Undignified",
         ]
     },
     {
         id:4,
-        question:"Bloat",
-        answer:"To become swollen",
+        question:"Mendicant",
+        answer:"Begging",
         options: [
-            "To become swollen",
-            "To shrink",
-            "To block",
-            "To revolt",
+            "Punctual",
+            "Begging",
+            "Rich",
+            "Lazy",
         ]
     },
     {
         id:5,
-        question:"Incarcerate",
-        answer:"To confine",
+        question:"Rapacious",
+        answer:"Greedy",
         options: [
-            "To decorate",
-            "To confine",
-            "To kill",
-            "To demonstrate",
+            "Hungary",
+            "Extravagant",
+            "Greedy",
+            "Foolish",
         ]
     },
     {
         id:6,
-        question:"Roughed out",
-        answer:"Drew a quick plan",
+        question:"Desecrated",
+        answer:"Treat with violent disrespect",
         options: [
-            "Shaped roughly",
-            "Rejected",
-            "Drew a quick plan",
-            "Described inaccurately",
+            "Decorated",
+            "Respected",
+            "Built",
+            "Treat with violent disrespect",
         ]
     },
     {
         id:7,
-        question:"Abyss",
-        answer:"Deep pit",
+        question:"Prolific",
+        answer:"Producing much fruit",
         options: [
-            "Well",
-            "Deep pit",
-            "Sea",
-            "Hollow",
+            "Bearing less fruits",
+            "Bearing no fruits",
+            "Prone to diseases",
+            "Producing much fruit",
         ]
     },
     {
         id:8,
-        question:"Audacity",
-        answer:"Courage",
+        question:"Peevish",
+        answer:"Irritated",
         options: [
-            "Courage",
-            "Authority",
-            "Foolishness",
-            "Arrogance",
+            "Irritated",
+            "Happy",
+            "Shy",
+            "Satisfied",
         ]
     },
     {
         id:9,
-        question:"Frenetic",
-        answer:"Hurried",
+        question:"Pernicious",
+        answer:"Harmful",
         options: [
-            "Strenuous",
-            "Hurried",
-            "Excited",
-            "Hectic",
+            "Opposite",
+            "Harmful",
+            "Beneficial",
+            "Calculated",
         ]
     },
     {
         id:10,
-        question:"Copious",
-        answer:"Exhaustive",
+        question:"Heckled",
+        answer:"Interrupted",
         options: [
-            "Extensive",
-            "Exhaustive",
-            "Bounteous",
-            "Abounding",
+            "Praised",
+            "Interrupted",
+            "Empowered",
+            "Approved",
         ]
     },
 ];
@@ -278,8 +278,8 @@ function showanswers()
     `<h6 class="anstext">3.${questions[2].question}</h6>
     <ul>
         1.<li class="btn btn-outline-light que3">${questions[2].options[0]}</li><br>
-        2.<li class="btn btn-outline-light que3">${questions[2].options[1]}</li><br>
-        3.<li class="btn btn-success que3">${questions[2].options[2]}</li><br>
+        2.<li class="btn btn-success que3">${questions[2].options[1]}</li><br>
+        3.<li class="btn btn-outline-light que3">${questions[2].options[2]}</li><br>
         4.<li class="btn btn-outline-light que3">${questions[2].options[3]}</li><br>
     </ul>`;
 
@@ -300,8 +300,8 @@ function showanswers()
     document.getElementById("showansbody4").innerHTML=
     `<h6 class="anstext">4.${questions[3].question}</h6>
     <ul>
-        1.<li class="btn btn-success que4">${questions[3].options[0]}</li><br>
-        2.<li class="btn btn-outline-light que4">${questions[3].options[1]}</li><br>
+        1.<li class="btn btn-outline-light que4">${questions[3].options[0]}</li><br>
+        2.<li class="btn btn-success que4">${questions[3].options[1]}</li><br>
         3.<li class="btn btn-outline-light que4">${questions[3].options[2]}</li><br>
         4.<li class="btn btn-outline-light que4">${questions[3].options[3]}</li><br>
     </ul>`;
@@ -324,8 +324,8 @@ function showanswers()
     `<h6 class="anstext">5.${questions[4].question}</h6>
     <ul>
         1.<li class="btn btn-outline-light que5">${questions[4].options[0]}</li><br>
-        2.<li class="btn btn-success que5">${questions[4].options[1]}</li><br>
-        3.<li class="btn btn-outline-light que5">${questions[4].options[2]}</li><br>
+        2.<li class="btn btn-outline-light que5">${questions[4].options[1]}</li><br>
+        3.<li class="btn btn-success que5">${questions[4].options[2]}</li><br>
         4.<li class="btn btn-outline-light que5">${questions[4].options[3]}</li><br>
     </ul>`;
 
@@ -348,8 +348,8 @@ function showanswers()
     <ul>
         1.<li class="btn btn-outline-light que6">${questions[5].options[0]}</li><br>
         2.<li class="btn btn-outline-light que6">${questions[5].options[1]}</li><br>
-        3.<li class="btn btn-success que6">${questions[5].options[2]}</li><br>
-        4.<li class="btn btn-outline-light que6">${questions[5].options[3]}</li><br>
+        3.<li class="btn btn-outline-light que6">${questions[5].options[2]}</li><br>
+        4.<li class="btn btn-success que6">${questions[5].options[3]}</li><br>
     </ul>`;
 
         let wroptions5=document.querySelectorAll("li.que6");
@@ -370,9 +370,9 @@ function showanswers()
     `<h6 class="anstext">7.${questions[6].question}</h6>
     <ul>
         1.<li class="btn btn-outline-light que7">${questions[6].options[0]}</li><br>
-        2.<li class="btn btn-success que7">${questions[6].options[1]}</li><br>
+        2.<li class="btn btn-outline-light que7">${questions[6].options[1]}</li><br>
         3.<li class="btn btn-outline-light que7">${questions[6].options[2]}</li><br>
-        4.<li class="btn btn-outline-light que7">${questions[6].options[3]}</li><br>
+        4.<li class="btn btn-success que7">${questions[6].options[3]}</li><br>
     </ul>`;
 
         let wroptions6=document.querySelectorAll("li.que7");
