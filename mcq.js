@@ -1,116 +1,115 @@
 let questions =[
     {
         id:1,
-        question:"Imprecation",
-        answer:"Curse",
+        question:"Rashi is an EXPONENT of free thinking.",
+        answer:"Supporter",
         options: [
-            "Blessing",
-            "Good Omen",
-            "Curse",
-            "Asuterity",
+            "Supporter",
+            "Opposer",
+            "Patriot",
+            "Thinker",
         ]
     },
     {
         id:2,
-        question:"Trilling",
-        answer:"Quavering",
+        question:"The truck JUDDERED to a halt.",
+        answer:"Shook",
         options: [
-            "Quavering",
-            "Peculiar",
-            "Pleasant",
-            "Husky",
+            "Shook",
+            "Stopped",
+            "Screeched",
+            "Came",
         ]
     },
     {
         id:3,
-        question:"Pantisocracy",
-        answer:"Govt in which all are equal",
+        question:"This is another example of big companies joining together to STOMP ON small businesses.",
+        answer:"Defeat",
         options: [
-            "Govt by the wealthy",
-            "Govt by a small group of people",
-            "Govt in which all are equal",
-            "Govt by poor",
+            "Help",
+            "Promote",
+            "Discourage",
+            "Defeat",
         ]
     },
     {
         id:4,
-        question:"Shrivelled",
-        answer:"Shrunken",
+        question:"My friend KICKED THE BUCKET when he was 49.",
+        answer:"To die",
         options: [
-            "Weak",
-            "Shrunken",
-            "Glowing",
-            "Drunken",
+            "Got famous",
+            "Married",
+            "To die",
+            "Start a new company",
         ]
     },
     {
         id:5,
-        question:"Extruded",
-        answer:"Forced out",
+        question:"My goal is CONGRUENT with my friend's goal.",
+        answer:"Similar",
         options: [
-            "Swallowed",
-            "Cleaned",
-            "Inserted",
-            "Forced out",
+            "Opposite",
+            "Similar",
+            "Different",
+            "Bigger",
         ]
     },
     {
         id:6,
-        question:"Put down",
-        answer:"Killed",
+        question:"He treats her with such DEFERENCE.",
+        answer:"Respect",
         options: [
-            "Domesticated",
-            "Set Free",
-            "Killed",
-            "United",
+            "Hostility",
+            "Disrespect",
+            "Criticism",
+            "Respect",
         ]
     },
     {
         id:7,
-        question:"Conferred",
-        answer:"Granted",
+        question:"Amit made a sharp RIPOSTE",
+        answer:"Quick and clever remark",
         options: [
-            "Granted",
-            "Agreed",
-            "Arranged",
-            "Established",
+            "Quick and clever remark",
+            "Attack",
+            "Exit",
+            "Alert",
         ]
     },
     {
         id:8,
-        question:"Swamped",
-        answer:"Flood",
+        question:"Overeating often leads to DYSPEPSIA.",
+        answer:"Indigestion",
         options: [
-            "Flood",
-            "Stricked",
-            "Destroy",
-            "Push",
+            "Wieght gain",
+            "Fatness",
+            "Vomitting",
+            "Indigestion",
         ]
     },
     {
         id:9,
-        question:"Consorting",
-        answer:"Spending time",
+        question:"The injection provided a temporary REPRIEVE from the pain.",
+        answer:"Escape",
         options: [
-            "Agreeing",
-            "Spending time",
-            "Fighting",
-            "Arguing",
+            "Escape",
+            "Addiction",
+            "Submission",
+            "Increase",
         ]
     },
     {
         id:10,
-        question:"Banished",
-        answer:"Deport",
+        question:"Tenants petitioned their RECALCIRANT landlord to finish repairs to their building.",
+        answer:"Unwilling to obey",
         options: [
-            "Vacate",
-            "Estimate",
-            "Deport",
-            "Flown",
+            "Hostile",
+            "Pleasing",
+            "Unwilling to obey",
+            "Irritating",
         ]
     },
 ];
-
 
 
 
@@ -231,16 +230,16 @@ function showanswers()
     document.getElementById("showansbody1").innerHTML=
     `<h6 class="anstext">1.${questions[0].question}</h6>
         <ul>
-            1.<li class="btn btn-outline-light que1">${questions[0].options[0]}</li><br>
+            1.<li class="btn btn-success que1">${questions[0].options[0]}</li><br>
             2.<li class="btn btn-outline-light que1">${questions[0].options[1]}</li><br>
-            3.<li class="btn btn-success que1">${questions[0].options[2]}</li><br>
+            3.<li class="btn btn-outline-light que1">${questions[0].options[2]}</li><br>
             4.<li class="btn btn-outline-light que1">${questions[0].options[3]}</li><br>
         </ul>`;
 
         let wroptions=document.querySelectorAll("li.que1");
         for(let i=0;i< wroptions.length;i++)
         {
-            for(let j=0;j< useransarray.length;j++)//all wrong ans 
+            for(let j=0;j< useransarray.length;j++)//all wrong ans's 
             {
                 if(useransarray[j] == questions[0].options[i])
                 {
@@ -279,8 +278,8 @@ function showanswers()
     <ul>
         1.<li class="btn btn-outline-light que3">${questions[2].options[0]}</li><br>
         2.<li class="btn btn-outline-light que3">${questions[2].options[1]}</li><br>
-        3.<li class="btn btn-success que3">${questions[2].options[2]}</li><br>
-        4.<li class="btn btn-outline-light que3">${questions[2].options[3]}</li><br>
+        3.<li class="btn btn-outline-light que3">${questions[2].options[2]}</li><br>
+        4.<li class="btn btn-success que3">${questions[2].options[3]}</li><br>
     </ul>`;
 
         let wroptions2=document.querySelectorAll("li.que3");
@@ -301,8 +300,8 @@ function showanswers()
     `<h6 class="anstext">4.${questions[3].question}</h6>
     <ul>
         1.<li class="btn btn-outline-light que4">${questions[3].options[0]}</li><br>
-        2.<li class="btn btn-success que4">${questions[3].options[1]}</li><br>
-        3.<li class="btn btn-outline-light que4">${questions[3].options[2]}</li><br>
+        2.<li class="btn btn-outline-light que4">${questions[3].options[1]}</li><br>
+        3.<li class="btn btn-success que4">${questions[3].options[2]}</li><br>
         4.<li class="btn btn-outline-light que4">${questions[3].options[3]}</li><br>
     </ul>`;
 
@@ -324,9 +323,9 @@ function showanswers()
     `<h6 class="anstext">5.${questions[4].question}</h6>
     <ul>
         1.<li class="btn btn-outline-light que5">${questions[4].options[0]}</li><br>
-        2.<li class="btn btn-outline-light que5">${questions[4].options[1]}</li><br>
+        2.<li class="btn btn-success que5">${questions[4].options[1]}</li><br>
         3.<li class="btn btn-outline-light que5">${questions[4].options[2]}</li><br>
-        4.<li class="btn btn-success que5">${questions[4].options[3]}</li><br>
+        4.<li class="btn btn-outline-light que5">${questions[4].options[3]}</li><br>
     </ul>`;
 
         let wroptions4=document.querySelectorAll("li.que5");
@@ -348,8 +347,8 @@ function showanswers()
     <ul>
         1.<li class="btn btn-outline-light que6">${questions[5].options[0]}</li><br>
         2.<li class="btn btn-outline-light que6">${questions[5].options[1]}</li><br>
-        3.<li class="btn btn-success que6">${questions[5].options[2]}</li><br>
-        4.<li class="btn btn-outline-light que6">${questions[5].options[3]}</li><br>
+        3.<li class="btn btn-outline-light que6">${questions[5].options[2]}</li><br>
+        4.<li class="btn btn-success que6">${questions[5].options[3]}</li><br>
     </ul>`;
 
         let wroptions5=document.querySelectorAll("li.que6");
@@ -392,10 +391,10 @@ function showanswers()
     document.getElementById("showansbody8").innerHTML=
     `<h6 class="anstext">8.${questions[7].question}</h6>
     <ul>
-        1.<li class="btn btn-success que8">${questions[7].options[0]}</li><br>
+        1.<li class="btn btn-outline-light que8">${questions[7].options[0]}</li><br>
         2.<li class="btn btn-outline-light que8">${questions[7].options[1]}</li><br>
         3.<li class="btn btn-outline-light que8">${questions[7].options[2]}</li><br>
-        4.<li class="btn btn-outline-light que8">${questions[7].options[3]}</li><br>
+        4.<li class="btn btn-success que8">${questions[7].options[3]}</li><br>
     </ul>`;
 
         let wroptions7=document.querySelectorAll("li.que8");
@@ -415,8 +414,8 @@ function showanswers()
     document.getElementById("showansbody9").innerHTML=
     `<h6 class="anstext">9.${questions[8].question}</h6>
     <ul>
-        1.<li class="btn btn-outline-light que9">${questions[8].options[0]}</li><br>
-        2.<li class="btn btn-success que9">${questions[8].options[1]}</li><br>
+        1.<li class="btn btn-success que9">${questions[8].options[0]}</li><br>
+        2.<li class="btn btn-outline-light que9">${questions[8].options[1]}</li><br>
         3.<li class="btn btn-outline-light que9">${questions[8].options[2]}</li><br>
         4.<li class="btn btn-outline-light que9">${questions[8].options[3]}</li><br>
     </ul>`;
