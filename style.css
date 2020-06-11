@@ -209,6 +209,7 @@ hr.light-101{
 }
 .btn-success::after{
     content: " ✔";   /*&#10004*/
+    color: white;
 }
 .wronganswer{
     background-color: rgb(175, 0, 0) ;
@@ -217,6 +218,7 @@ hr.light-101{
 }
 .wronganswer::after{
     content: "  ✘";  /*&#10008*/
+    color: white;
 }
 .card-footer-img{
     height: 2.7rem;
