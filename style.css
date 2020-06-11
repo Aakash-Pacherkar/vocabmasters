@@ -202,10 +202,21 @@ hr.light-101{
     padding: .2rem;
     margin: 0;
 }
+.btn-success{
+    background-color: rgba(1, 151, 1, 0.788);
+    color:white;
+    border-color: rgb(0, 83, 0);
+}
+.btn-success::after{
+    content: " ✔";   /*&#10004*/
+}
 .wronganswer{
     background-color: rgb(175, 0, 0) ;
     color: white;
     border-color: rgb(143, 0, 0);
+}
+.wronganswer::after{
+    content: "  ✘";  /*&#10008*/
 }
 .card-footer-img{
     height: 2.7rem;
