@@ -81,7 +81,7 @@ let questions =[
         question:"Overeating often leads to DYSPEPSIA.",
         answer:"Indigestion",
         options: [
-            "Wieght gain",
+            "Weight gain",
             "Fatness",
             "Vomitting",
             "Indigestion",
@@ -191,7 +191,7 @@ function next()
         document.getElementById("result").innerHTML=
         `<i class="fas fa-award"></i><br> 
         <h6 class="scoretxt">Your Score : ${pscore} /10 </h6><br>
-        <h6 class="timmertxt">Time taken :  ${min} : ${sec}</h6><br>
+        <h6 class="timmertxt">Time taken : ${min} : ${sec}</h6><br>
         <hr class="light-100">`;
         
         res.classList.remove("hide");
