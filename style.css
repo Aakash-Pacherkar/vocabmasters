@@ -189,13 +189,18 @@ hr.light-101{
     text-align: center;
     vertical-align: middle;
     align-content: center;
-    margin-left: 35%;
+    margin-left: 37%;
 }
 .scoretxt
 {
     font-size: 1.5rem;
     text-align: center;
     padding: 1rem;
+}
+.timmertxt
+{
+    font-size: 1.5rem;
+    text-align: center;
 }
 .anstext{
     font-size:1rem;
@@ -224,6 +229,13 @@ hr.light-101{
     height: 2.7rem;
     width: auto;
 }
+
+/*timmer*/
+#timmer{
+    float: right;
+    margin-top: 0.4rem;
+}
+
 /*----------Media queries----------*/
 
 @media (max-width:992px){

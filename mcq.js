@@ -112,7 +112,8 @@ let questions =[
 ];
 
 
-
+var timmerID = 0; 
+var timmer1=document.querySelector("#timmer");//timmer
 var nextbtn=document.querySelector("#nextbtn");//next button
 var question=document.querySelector("#que");//questions
 var startbtn=document.querySelector("#startbtn");//startbtn
@@ -145,6 +146,9 @@ function startmcq()
     //------------------show stuff---------------------------
     nextbtn.classList.remove("hide");//show next btn
     question.classList.remove("hide");//show first question
+    
+    timmer1.classList.remove("hide");//show timmer
+    var timmerID=setInterval(timmer,1000)//starting the timmer
     //-------------------------------------------------------
 
     //-----------Hide Stuff------------------------
@@ -187,6 +191,7 @@ function next()
         document.getElementById("result").innerHTML=
         `<i class="fas fa-award"></i><br> 
         <h6 class="scoretxt">Your Score : ${pscore} /10 </h6><br>
+        <h6 class="timmertxt">Time taken : ${min} : ${sec}</h6><br>
         <hr class="light-100">`;
         
         res.classList.remove("hide");
@@ -196,6 +201,8 @@ function next()
         //--------------------hide stuff------------------
         question.classList.add("hide");
         nextbtn.classList.add("hide");
+        timmer1.classList.add("hide");
+        clearInterval(timmerID);//stop timmer
         //------------------------------------------------
         return;
     }
@@ -494,5 +501,23 @@ function toggleactive()
             }
             option[i].classList.add("active");
         }
+    }
+}
+
+//Timmer
+var sec=0
+var min=0
+function timmer()
+{
+    sec++
+    if(sec==60)
+    {
+        min++
+        sec=0
+        document.getElementById("timmer").innerHTML= min+" : "+sec;
+    }
+    else
+    {
+        document.getElementById("timmer").innerHTML= min+" : "+sec;
     }
 }
