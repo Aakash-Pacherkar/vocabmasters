@@ -166,7 +166,7 @@ function next()
 {   
     //restart timmer-------------------------
     clearInterval(timmerID);
-    sec=6;
+    sec=46;
     timmerID=setInterval(timmer,1000);
     //---------------------------------------
     let option = document.querySelectorAll("li.q1");
@@ -518,7 +518,7 @@ function toggleactive()
 }
 
 //Timmer
-var sec=6
+var sec=46
 var min=0
 
 function timmer()
@@ -528,7 +528,7 @@ function timmer()
     console.log(sec);
     if(sec==0)
     {
-        sec=6
+        sec=46
         next();
     }
 }
