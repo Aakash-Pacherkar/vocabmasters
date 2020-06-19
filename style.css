@@ -246,7 +246,7 @@ hr.light-101{
     height: 2.3rem;
     width: auto;
 }
-.copyrights{
+.copymcq{
     margin-bottom: .4rem;
 }
 
@@ -266,6 +266,9 @@ hr.light-101{
 }
 
 @media (max-width:768px){
+    .navbar-toggler{
+        border: none;
+    }
     .navbar-brand img{
         height: 2.3rem;
         width: auto;
