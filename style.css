@@ -112,7 +112,7 @@ html, body{
 }
 .card-bg{
    /* background-color: rgb(174, 232, 255);*/
-   padding-top: .5rem;
+   padding-top: .4rem;
 }
 
 .social a{
@@ -174,9 +174,10 @@ hr.light-101{
 }
 
 /*mcq box*/
-.name-head{
-    font-size: 20px;
-}
+/*.name-head{
+    padding: 0;
+    display: none;
+}*/
 .copymcq{
     color: black;
     text-shadow: none;
@@ -243,7 +244,7 @@ hr.light-101{
     color: white;
 }
 .card-footer-img{
-    height: 2.7rem;
+    height: 2.3rem;
     width: auto;
 }
 

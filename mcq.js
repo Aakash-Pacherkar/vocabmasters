@@ -137,7 +137,7 @@ function startmcq()
 
     console.log("start clicked "+username);
 
-    document.getElementById("welcome").innerHTML='Welcome! '+username;
+    //document.getElementById("welcome").innerHTML='Welcome! '+username;
     
     //store players name and set score to zero using session
     sessionStorage.setItem("playername",username); 
