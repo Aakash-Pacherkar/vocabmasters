@@ -174,10 +174,9 @@ hr.light-101{
 }
 
 /*mcq box*/
-/*.name-head{
+.name-head{
     padding: 0;
-    display: none;
-}*/
+}
 .copymcq{
     color: black;
     text-shadow: none;
