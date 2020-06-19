@@ -246,6 +246,9 @@ hr.light-101{
     height: 2.3rem;
     width: auto;
 }
+.copyrights{
+    margin-bottom: .4rem;
+}
 
 /*timmer*/
 #timmer{
@@ -263,6 +266,10 @@ hr.light-101{
 }
 
 @media (max-width:768px){
+    .navbar-brand img{
+        height: 2.3rem;
+        width: auto;
+    }
     .carousel-caption {
         top: 20%;
     }
@@ -290,6 +297,13 @@ hr.light-101{
 }
 
 @media (max-width:576px){
+    .navbar-toggler{
+        border: none;
+    }
+    .navbar-brand img{
+        height: 2.6rem;
+        width: auto;
+    }
     .carousel-caption {
         top: 3%;
     }
