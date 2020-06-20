@@ -34,11 +34,11 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
 
-                    <div class="dropdown">
+                    <div class="dropdown navdrop">
                         <li class="nav-item dropdown-toggle" data-toggle="dropdown">
                             MCQ
                         </li>
-                        <div class="dropdown-menu">
+                        <div class="dropdown-menu navdrop-menu">
                             <a class="nav-link dropdown-item" href="mcq.html">MCQs</a>
                             <a class="nav-link dropdown-item" href="mcqarcade.html">MCQs (Time trial)</a>
                         </div>
@@ -68,7 +68,7 @@
                     <h1 class="display-2">Vocab Masters</h1>
                     <h3>English for NDA/CDS</h3>
                     <a href="#learnmore"><button type="button" class="btn btn-outline-light btn-lg">Learn more</button></a>
-                    <a href="mcq.html"><button type="button" class="btn btn-primary btn-lg">Get started</button></a>
+                    <a href="getstarted.html"><button type="button" class="btn btn-primary btn-lg">Get started</button></a>
                 </div>
             </div>
             <div class="carousel-item">
@@ -101,7 +101,16 @@
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-                <a href="mcq.html"><button type="button" class="btn btn-outline-secondary btn-md">Get the test</button></a>
+                <div class="dropdown showtrynow">
+                    <a class="btn btn-outline-secondary btn-sm dropdown-toggle trynow" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Try now!!
+                    </a>
+                  
+                    <div class="dropdown-menu trynow-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="mcq.html">MCQ</a>
+                      <a class="dropdown-item" href="mcqarcade.html">MCQ (Time trial)</a>
+                    </div>
+                  </div>
             </div>
         </div>
     </div>
@@ -140,7 +149,7 @@
                 <p>Dont just memorize.Achieve mastery.</p>
             </div>
         </div>
-    </div>
+    </div>  
 
     <hr class="light-100">
     <!--about me/meet the team-->

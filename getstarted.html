@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!--jquery first then popper.js and then bootstrap.js-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--font awesome js-->
+    <script src="https://kit.fontawesome.com/5dee0870d6.js" crossorigin="anonymous"></script>
+    
+    <!--mcq execution-->
+    <script defer src="mcq.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--navbar-->
+    <div class="navbar navbar-expand-md navbar-light bg-primary sticky-top py-0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="navbar-logoimg" src="img/logo_transparent.png"></a>
+        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Back to home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid padding">
+
+        <video autoplay muted loop id="bgvid">
+            <source src="img/Space.mp4" type="video/mp4">
+        </video>
+
+        <div class="row text-center padding getstartedbtns">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="mcq.html"><button type="button" class="btn btn-outline-light">MCQ Synonyms</button></a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <a href="mcqarcade.html"><button type="button" class="btn btn-outline-light">MCQ Synonyms (Time trial)</button></a>
+            </div>
+            <div class="col-xs-12 col-md-4 col-lg-3">
+                <a href="#"><button type="button" class="btn btn-outline-light" disabled>MCQ antonyms</button></a>
+            </div>
+            <div class="col-xs-12 col-lg-3">
+                <a href="#"><button type="button" class="btn btn-outline-light" disabled>MCQ antonyms (Time trial)</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+        <footer class="fixed-bottom bg-none py-0">
+            <div class="container-fluid bg-light padding">
+                <div class="row text-center">
+                    <div class="col-md-12 copyrights">
+                        <p class="copymcq">&copy; Vocab masters 2020. Developed by Aakash Pacherkar. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

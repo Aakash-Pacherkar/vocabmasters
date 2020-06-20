@@ -14,18 +14,29 @@ html, body{
 .nav-link, .dropdown-toggle{
     font-size: 1.3em !important;
 }
-.dropdown{
+.navdrop{
     padding-top: 0.5rem;
 }
-.dropdown li{
+.navdrop li{
     cursor: pointer;
 }
-.dropdown-menu{
+.navdrop-menu{
     background-color: rgb(108, 108, 255);
 }
-.dropdown a:hover{
+.navdrop-menu a:hover{
     color: #000;
     background-color: rgb(108, 108, 255);
+    font-weight: bold;
+}
+.show{
+    padding-top: 0;
+}
+.trynow-menu{
+    background-color: cadetblue;
+    border-radius: 10px;
+}
+.showtrynow a:hover{
+    background-color: cadetblue;
     font-weight: bold;
 }
 .navbar-nav div{
@@ -257,7 +268,27 @@ hr.light-101{
     margin-top: 0.4rem;
 }
 
+/*getstarted section*/
+.getstartedbtns button{
+    margin: .7rem;
+}
+.getstartedbtns{
+    margin-top: 1.5rem;
+}
+#bgvid{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 /*----------Media queries----------*/
+@media (min-width:1032px){
+    .getstartedbtns{
+        margin-top: 15%;
+    }
+}
 
 @media (max-width:992px){
     .social a{
@@ -267,6 +298,7 @@ hr.light-101{
 }
 
 @media (max-width:768px){
+   
     .navbar-toggler{
         border: none;
     }
