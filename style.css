@@ -264,11 +264,10 @@ hr.light-101{
     width: 100%;
     background: rgb(138, 223, 138, 0.5);
     position: relative;
-    height:10%;
+    bottom: 0rem;
 }
 .getstartedfooter{
     width: 100%;
-    height: 10%;
     background: rgb(138, 223, 138, 0.5);
     position: absolute;
     bottom: 0;
