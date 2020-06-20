@@ -191,7 +191,10 @@ hr.light-101{
 .copymcq{
     color: black;
     text-shadow: none;
-    font-size: 10px;
+    font-size: 12px;
+
+    margin-top: 1rem;
+    margin-bottom: 0;
 }
 .card{
     box-shadow: 1px 1px 10px black;
@@ -257,9 +260,18 @@ hr.light-101{
     height: 2.3rem;
     width: auto;
 }
-.copymcq{
-    margin-top: 1rem;
-    margin-bottom: 1.4rem;
+.mcqfooter, .mcqarcadefooter{
+    width: 100%;
+    background: rgb(138, 223, 138, 0.5);
+    position: relative;
+    height:16%;
+}
+.getstartedfooter{
+    width: 100%;
+    height: 16%;
+    background: rgb(138, 223, 138, 0.5);
+    position: absolute;
+    bottom: 0;
 }
 
 /*timmer*/
