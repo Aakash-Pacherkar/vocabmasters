@@ -175,7 +175,7 @@ hr.light-101{
 
 /*footer and connect background*/
 .container-if-fixed-footer{
-    margin-bottom: 7rem;
+    margin-bottom: 1rem;
 }
 .forbg{
     background-image:linear-gradient(rgba(255, 255, 255, 0.507),rgba(207, 206, 206, 0.459)), url("img/78869.jpg"); 
