@@ -123,7 +123,7 @@ html, body{
 }
 .card-bg{
    /* background-color: rgb(174, 232, 255);*/
-   padding-top: .4rem;
+   padding-top: 1rem;
 }
 
 .social a{
@@ -260,16 +260,17 @@ hr.light-101{
     height: 2.3rem;
     width: auto;
 }
-.mcqfooter, .mcqarcadefooter{
+.mcqfooter, .mcqarcadefooter{ 
+    position: relative !important;
+    bottom: 0% !important;
     width: 100%;
     background: rgb(138, 223, 138, 0.5);
-    position: relative;
-    bottom: 0rem;
+    clear: both;
 }
 .getstartedfooter{
     width: 100%;
     background: rgb(138, 223, 138, 0.5);
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 
@@ -295,7 +296,18 @@ hr.light-101{
 }
 
 /*----------Media queries----------*/
-@media (min-width:1032px){
+
+@media (min-height:731px){
+    .mcqfooter, .mcqarcadefooter{ 
+        position: fixed !important;
+        bottom: 0% !important;
+        width: 100%;
+        background: rgb(138, 223, 138, 0.5);
+        clear: both;
+    }
+}
+
+@media (min-width:1032px){     /*for desktop responsiveness of getstarted menu UI*/
     .getstartedbtns{
         margin-top: 15%;
     }
