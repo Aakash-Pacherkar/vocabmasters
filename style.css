@@ -175,7 +175,7 @@ hr.light-101{
 
 /*footer and connect background*/
 .container-if-fixed-footer{
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 .forbg{
     background-image:linear-gradient(rgba(255, 255, 255, 0.507),rgba(207, 206, 206, 0.459)), url("img/78869.jpg"); 
@@ -297,13 +297,21 @@ hr.light-101{
 
 /*----------Media queries----------*/
 
-@media (min-height:731px){
+@media (min-height:731px){        /*for mobiles with length more than 731px i.e lamb lachak phones*/
     .mcqfooter, .mcqarcadefooter{ 
         position: fixed !important;
         bottom: 0% !important;
         width: 100%;
-        background: rgb(138, 223, 138, 0.5);
+        background: rgb(56, 56, 56);
         clear: both;
+    }
+    .copymcq{
+        color: rgb(168, 199, 130);
+        text-shadow: none;
+        font-size: 12px;
+    
+        margin-top: 1rem;
+        margin-bottom: 0;
     }
 }
 
