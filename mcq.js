@@ -1,112 +1,112 @@
 let questions =[
     {
         id:1,
-        question:"Rashi is an EXPONENT of free thinking.",
-        answer:"Supporter",
+        question:"A BENIGN lady was hurt in the accident.",
+        answer:"Kind",
         options: [
-            "Supporter",
-            "Opposer",
-            "Patriot",
-            "Thinker",
+            "Rude",
+            "Insolent",
+            "Tricky",
+            "Kind",
         ]
     },
     {
         id:2,
-        question:"The truck JUDDERED to a halt.",
-        answer:"Shook",
+        question:"Lately i have been feeling very HARRIED at work.",
+        answer:"Worried",
         options: [
-            "Shook",
-            "Stopped",
-            "Screeched",
-            "Came",
+            "Worried",
+            "Hurt",
+            "Relaxed",
+            "Guilt",
         ]
     },
     {
         id:3,
-        question:"This is another example of big companies joining together to STOMP ON small businesses.",
-        answer:"Defeat",
+        question:"We dont have discussions with them until they ESCHEW violence.",
+        answer:"Give up",
         options: [
-            "Help",
-            "Promote",
-            "Discourage",
-            "Defeat",
+            "Give up",
+            "Take up",
+            "Reduce",
+            "Criminalise",
         ]
     },
     {
         id:4,
-        question:"My friend KICKED THE BUCKET when he was 49.",
-        answer:"To die",
+        question:"His ruthless accumulation of wealth stands as a PARADIGM of greed in the business industry.",
+        answer:"Model",
         options: [
-            "Got famous",
-            "Married",
-            "To die",
-            "Start a new company",
+            "Supporter",
+            "Opposer",
+            "Model",
+            "Arbitrer",
         ]
     },
     {
         id:5,
-        question:"My goal is CONGRUENT with my friend's goal.",
-        answer:"Similar",
+        question:"Soldiers from many different countries have been SUBSUMED into the UN peace-keeping force.",
+        answer:"Included",
         options: [
-            "Opposite",
-            "Similar",
-            "Different",
-            "Bigger",
+            "Excluded",
+            "Included",
+            "Punished",
+            "Praised",
         ]
     },
     {
         id:6,
-        question:"He treats her with such DEFERENCE.",
-        answer:"Respect",
+        question:"The song had a SOPORIFIC effect on the child.",
+        answer:"Sleep-inducing",
         options: [
-            "Hostility",
-            "Disrespect",
-            "Criticism",
-            "Respect",
+            "Soothing",
+            "Terrific",
+            "Supreme",
+            "Sleep-inducing",
         ]
     },
     {
         id:7,
-        question:"Amit made a sharp RIPOSTE",
-        answer:"Quick and clever remark",
+        question:"His ALLEGIANCE to the party was suspected from the very beginning.",
+        answer:"Loyalty",
         options: [
-            "Quick and clever remark",
-            "Attack",
-            "Exit",
-            "Alert",
+            "Servility",
+            "Obedience",
+            "Loyalty",
+            "Passivity",
         ]
     },
     {
         id:8,
-        question:"Overeating often leads to DYSPEPSIA.",
-        answer:"Indigestion",
+        question:"Sympathetic criticism has a SALUTARY effect.",
+        answer:"Beneficial",
         options: [
-            "Weight gain",
-            "Fatness",
-            "Vomitting",
-            "Indigestion",
+            "Premature",
+            "Terrible",
+            "Disastrous",
+            "Beneficial",
         ]
     },
     {
         id:9,
-        question:"The injection provided a temporary REPRIEVE from the pain.",
-        answer:"Escape",
+        question:"His bad behaviour EVOKED punishment.",
+        answer:"Called for",
         options: [
-            "Escape",
-            "Addiction",
-            "Submission",
-            "Increase",
+            "Escaped",
+            "Called for",
+            "Produced",
+            "Summoned",
         ]
     },
     {
         id:10,
-        question:"Tenants petitioned their RECALCIRANT landlord to finish repairs to their building.",
-        answer:"Unwilling to obey",
+        question:"He fell into an ABYSS of despair.",
+        answer:"Deep pit",
         options: [
-            "Hostile",
-            "Pleasing",
-            "Unwilling to obey",
-            "Irritating",
+            "Well",
+            "Deep pit",
+            "Sea",
+            "Hollow",
         ]
     },
 ];
@@ -237,10 +237,10 @@ function showanswers()
     document.getElementById("showansbody1").innerHTML=
     `<h6 class="anstext">1.${questions[0].question}</h6>
         <ul>
-            1.<li class="btn btn-success que1">${questions[0].options[0]}</li><br>
+            1.<li class="btn btn-outline-light que1">${questions[0].options[0]}</li><br>
             2.<li class="btn btn-outline-light que1">${questions[0].options[1]}</li><br>
             3.<li class="btn btn-outline-light que1">${questions[0].options[2]}</li><br>
-            4.<li class="btn btn-outline-light que1">${questions[0].options[3]}</li><br>
+            4.<li class="btn btn-success que1">${questions[0].options[3]}</li><br>
         </ul>`;
 
         let wroptions=document.querySelectorAll("li.que1");
@@ -283,10 +283,10 @@ function showanswers()
     document.getElementById("showansbody3").innerHTML=
     `<h6 class="anstext">3.${questions[2].question}</h6>
     <ul>
-        1.<li class="btn btn-outline-light que3">${questions[2].options[0]}</li><br>
+        1.<li class="btn btn-success que3">${questions[2].options[0]}</li><br>
         2.<li class="btn btn-outline-light que3">${questions[2].options[1]}</li><br>
         3.<li class="btn btn-outline-light que3">${questions[2].options[2]}</li><br>
-        4.<li class="btn btn-success que3">${questions[2].options[3]}</li><br>
+        4.<li class="btn btn-outline-light que3">${questions[2].options[3]}</li><br>
     </ul>`;
 
         let wroptions2=document.querySelectorAll("li.que3");
@@ -375,9 +375,9 @@ function showanswers()
     document.getElementById("showansbody7").innerHTML=
     `<h6 class="anstext">7.${questions[6].question}</h6>
     <ul>
-        1.<li class="btn btn-success que7">${questions[6].options[0]}</li><br>
+        1.<li class="btn btn-outline-light que7">${questions[6].options[0]}</li><br>
         2.<li class="btn btn-outline-light que7">${questions[6].options[1]}</li><br>
-        3.<li class="btn btn-outline-light que7">${questions[6].options[2]}</li><br>
+        3.<li class="btn btn-success que7">${questions[6].options[2]}</li><br>
         4.<li class="btn btn-outline-light que7">${questions[6].options[3]}</li><br>
     </ul>`;
 
@@ -421,8 +421,8 @@ function showanswers()
     document.getElementById("showansbody9").innerHTML=
     `<h6 class="anstext">9.${questions[8].question}</h6>
     <ul>
-        1.<li class="btn btn-success que9">${questions[8].options[0]}</li><br>
-        2.<li class="btn btn-outline-light que9">${questions[8].options[1]}</li><br>
+        1.<li class="btn btn-outline-light que9">${questions[8].options[0]}</li><br>
+        2.<li class="btn btn-success que9">${questions[8].options[1]}</li><br>
         3.<li class="btn btn-outline-light que9">${questions[8].options[2]}</li><br>
         4.<li class="btn btn-outline-light que9">${questions[8].options[3]}</li><br>
     </ul>`;
@@ -445,8 +445,8 @@ function showanswers()
     `<h6 class="anstext">10.${questions[9].question}</h6>
     <ul>
         1.<li class="btn btn-outline-light que10">${questions[9].options[0]}</li><br>
-        2.<li class="btn btn-outline-light que10">${questions[9].options[1]}</li><br>
-        3.<li class="btn btn-success que10">${questions[9].options[2]}</li><br>
+        2.<li class="btn btn-success que10">${questions[9].options[1]}</li><br>
+        3.<li class="btn btn-outline-light que10">${questions[9].options[2]}</li><br>
         4.<li class="btn btn-outline-light que10">${questions[9].options[3]}</li><br>
     </ul>`;
 
