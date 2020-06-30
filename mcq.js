@@ -1,112 +1,112 @@
 let questions =[
     {
         id:1,
-        question:"A BENIGN lady was hurt in the accident.",
-        answer:"Kind",
+        question:"I never believed that it was the AUTHENTIC signature of the Prime Minister.",
+        answer:"Genuine",
         options: [
-            "Rude",
-            "Insolent",
-            "Tricky",
-            "Kind",
+            "Hand-written",
+            "Genuine",
+            "Proper",
+            "Authoritative",
         ]
     },
     {
         id:2,
-        question:"Lately i have been feeling very HARRIED at work.",
-        answer:"Worried",
+        question:"Valiant Vicky used to BOAST of his bravery to his beloved wife.",
+        answer:"Brag",
         options: [
-            "Worried",
-            "Hurt",
-            "Relaxed",
-            "Guilt",
+            "Cry",
+            "Abuse",
+            "Hate",
+            "Brag",
         ]
     },
     {
         id:3,
-        question:"We dont have discussions with them until they ESCHEW violence.",
-        answer:"Give up",
+        question:"I can no longer satisfied with FICTITIOUS good conduct.",
+        answer:"Work of fiction",
         options: [
-            "Give up",
-            "Take up",
-            "Reduce",
-            "Criminalise",
+            "Facts",
+            "Imagination",
+            "Works of fiction",
+            "Feudal ties",
         ]
     },
     {
         id:4,
-        question:"His ruthless accumulation of wealth stands as a PARADIGM of greed in the business industry.",
-        answer:"Model",
+        question:"MASS MURDER is very often a result of communal frenzy.",
+        answer:"Genocide",
         options: [
-            "Supporter",
-            "Opposer",
-            "Model",
-            "Arbitrer",
+            "Patricide",
+            "Fratricide",
+            "Regicide",
+            "Genocide",
         ]
     },
     {
         id:5,
-        question:"Soldiers from many different countries have been SUBSUMED into the UN peace-keeping force.",
-        answer:"Included",
+        question:"The two EXECUTIONERS approached the tree with a red mark on its side.",
+        answer:"Those who inflict capital punishment.",
         options: [
-            "Excluded",
-            "Included",
-            "Punished",
-            "Praised",
+            "Executive engineers",
+            "Explorers",
+            "Experimenters",
+            "Those who inflict capital punishment.",
         ]
     },
     {
         id:6,
-        question:"The song had a SOPORIFIC effect on the child.",
-        answer:"Sleep-inducing",
+        question:"The MAIDEN SPEECH of the young member of the Lok Sabha was very much appreciated by the people.",
+        answer:"First speech",
         options: [
-            "Soothing",
-            "Terrific",
-            "Supreme",
-            "Sleep-inducing",
+            "Farewell speech",
+            "Short speech",
+            "First speech",
+            "Speech about women",
         ]
     },
     {
         id:7,
-        question:"His ALLEGIANCE to the party was suspected from the very beginning.",
-        answer:"Loyalty",
+        question:"Please do not INTERFERE with my work.",
+        answer:"Meddle",
         options: [
-            "Servility",
-            "Obedience",
-            "Loyalty",
-            "Passivity",
+            "Meddle",
+            "Help",
+            "Object",
+            "Copy",
         ]
     },
     {
         id:8,
-        question:"Sympathetic criticism has a SALUTARY effect.",
-        answer:"Beneficial",
+        question:"This job is very TEDIOUS.",
+        answer:"Tiresome",
         options: [
-            "Premature",
-            "Terrible",
-            "Disastrous",
-            "Beneficial",
+            "Tiresome",
+            "Dull",
+            "Interesting",
+            "Exciting",
         ]
     },
     {
         id:9,
-        question:"His bad behaviour EVOKED punishment.",
-        answer:"Called for",
+        question:"She TAKES AFTER her mother.",
+        answer:"Resembles",
         options: [
-            "Escaped",
-            "Called for",
-            "Produced",
-            "Summoned",
+            "Follows",
+            "Come after",
+            "Resembles",
+            "Imitates",
         ]
     },
     {
         id:10,
-        question:"He fell into an ABYSS of despair.",
-        answer:"Deep pit",
+        question:"He is very intelligent, but ILL-FAVOURED by nature.",
+        answer:"Ugly",
         options: [
-            "Well",
-            "Deep pit",
-            "Sea",
-            "Hollow",
+            "Unlucky",
+            "Weak in health",
+            "Short-tempered",
+            "Ugly",
         ]
     },
 ];
@@ -238,9 +238,9 @@ function showanswers()
     `<h6 class="anstext">1.${questions[0].question}</h6>
         <ul>
             1.<li class="btn btn-outline-light que1">${questions[0].options[0]}</li><br>
-            2.<li class="btn btn-outline-light que1">${questions[0].options[1]}</li><br>
+            2.<li class="btn btn-success que1">${questions[0].options[1]}</li><br>
             3.<li class="btn btn-outline-light que1">${questions[0].options[2]}</li><br>
-            4.<li class="btn btn-success que1">${questions[0].options[3]}</li><br>
+            4.<li class="btn btn-outline-light que1">${questions[0].options[3]}</li><br>
         </ul>`;
 
         let wroptions=document.querySelectorAll("li.que1");
@@ -260,10 +260,10 @@ function showanswers()
     document.getElementById("showansbody2").innerHTML=
     `<h6 class="anstext">2.${questions[1].question}</h6>
         <ul>
-            1.<li class="btn btn-success que2">${questions[1].options[0]}</li><br>
+            1.<li class="btn btn-outline-light que2">${questions[1].options[0]}</li><br>
             2.<li class="btn btn-outline-light que2">${questions[1].options[1]}</li><br>
             3.<li class="btn btn-outline-light que2">${questions[1].options[2]}</li><br>
-            4.<li class="btn btn-outline-light que2">${questions[1].options[3]}</li><br>
+            4.<li class="btn btn-success que2">${questions[1].options[3]}</li><br>
         </ul>`;
         
         let wroptions1=document.querySelectorAll("li.que2");
@@ -283,9 +283,9 @@ function showanswers()
     document.getElementById("showansbody3").innerHTML=
     `<h6 class="anstext">3.${questions[2].question}</h6>
     <ul>
-        1.<li class="btn btn-success que3">${questions[2].options[0]}</li><br>
+        1.<li class="btn btn-outline-light que3">${questions[2].options[0]}</li><br>
         2.<li class="btn btn-outline-light que3">${questions[2].options[1]}</li><br>
-        3.<li class="btn btn-outline-light que3">${questions[2].options[2]}</li><br>
+        3.<li class="btn btn-success que3">${questions[2].options[2]}</li><br>
         4.<li class="btn btn-outline-light que3">${questions[2].options[3]}</li><br>
     </ul>`;
 
@@ -308,8 +308,8 @@ function showanswers()
     <ul>
         1.<li class="btn btn-outline-light que4">${questions[3].options[0]}</li><br>
         2.<li class="btn btn-outline-light que4">${questions[3].options[1]}</li><br>
-        3.<li class="btn btn-success que4">${questions[3].options[2]}</li><br>
-        4.<li class="btn btn-outline-light que4">${questions[3].options[3]}</li><br>
+        3.<li class="btn btn-outline-light que4">${questions[3].options[2]}</li><br>
+        4.<li class="btn btn-success que4">${questions[3].options[3]}</li><br>
     </ul>`;
 
         let wroptions3=document.querySelectorAll("li.que4");
@@ -330,9 +330,9 @@ function showanswers()
     `<h6 class="anstext">5.${questions[4].question}</h6>
     <ul>
         1.<li class="btn btn-outline-light que5">${questions[4].options[0]}</li><br>
-        2.<li class="btn btn-success que5">${questions[4].options[1]}</li><br>
+        2.<li class="btn btn-outline-light que5">${questions[4].options[1]}</li><br>
         3.<li class="btn btn-outline-light que5">${questions[4].options[2]}</li><br>
-        4.<li class="btn btn-outline-light que5">${questions[4].options[3]}</li><br>
+        4.<li class="btn btn-success que5">${questions[4].options[3]}</li><br>
     </ul>`;
 
         let wroptions4=document.querySelectorAll("li.que5");
@@ -354,8 +354,8 @@ function showanswers()
     <ul>
         1.<li class="btn btn-outline-light que6">${questions[5].options[0]}</li><br>
         2.<li class="btn btn-outline-light que6">${questions[5].options[1]}</li><br>
-        3.<li class="btn btn-outline-light que6">${questions[5].options[2]}</li><br>
-        4.<li class="btn btn-success que6">${questions[5].options[3]}</li><br>
+        3.<li class="btn btn-success que6">${questions[5].options[2]}</li><br>
+        4.<li class="btn btn-outline-light que6">${questions[5].options[3]}</li><br>
     </ul>`;
 
         let wroptions5=document.querySelectorAll("li.que6");
@@ -375,9 +375,9 @@ function showanswers()
     document.getElementById("showansbody7").innerHTML=
     `<h6 class="anstext">7.${questions[6].question}</h6>
     <ul>
-        1.<li class="btn btn-outline-light que7">${questions[6].options[0]}</li><br>
+        1.<li class="btn btn-success que7">${questions[6].options[0]}</li><br>
         2.<li class="btn btn-outline-light que7">${questions[6].options[1]}</li><br>
-        3.<li class="btn btn-success que7">${questions[6].options[2]}</li><br>
+        3.<li class="btn btn-outline-light que7">${questions[6].options[2]}</li><br>
         4.<li class="btn btn-outline-light que7">${questions[6].options[3]}</li><br>
     </ul>`;
 
@@ -398,10 +398,10 @@ function showanswers()
     document.getElementById("showansbody8").innerHTML=
     `<h6 class="anstext">8.${questions[7].question}</h6>
     <ul>
-        1.<li class="btn btn-outline-light que8">${questions[7].options[0]}</li><br>
+        1.<li class="btn btn-success que8">${questions[7].options[0]}</li><br>
         2.<li class="btn btn-outline-light que8">${questions[7].options[1]}</li><br>
         3.<li class="btn btn-outline-light que8">${questions[7].options[2]}</li><br>
-        4.<li class="btn btn-success que8">${questions[7].options[3]}</li><br>
+        4.<li class="btn btn-outline-light que8">${questions[7].options[3]}</li><br>
     </ul>`;
 
         let wroptions7=document.querySelectorAll("li.que8");
@@ -422,8 +422,8 @@ function showanswers()
     `<h6 class="anstext">9.${questions[8].question}</h6>
     <ul>
         1.<li class="btn btn-outline-light que9">${questions[8].options[0]}</li><br>
-        2.<li class="btn btn-success que9">${questions[8].options[1]}</li><br>
-        3.<li class="btn btn-outline-light que9">${questions[8].options[2]}</li><br>
+        2.<li class="btn btn-outline-light que9">${questions[8].options[1]}</li><br>
+        3.<li class="btn btn-success que9">${questions[8].options[2]}</li><br>
         4.<li class="btn btn-outline-light que9">${questions[8].options[3]}</li><br>
     </ul>`;
 
@@ -445,9 +445,9 @@ function showanswers()
     `<h6 class="anstext">10.${questions[9].question}</h6>
     <ul>
         1.<li class="btn btn-outline-light que10">${questions[9].options[0]}</li><br>
-        2.<li class="btn btn-success que10">${questions[9].options[1]}</li><br>
+        2.<li class="btn btn-outline-light que10">${questions[9].options[1]}</li><br>
         3.<li class="btn btn-outline-light que10">${questions[9].options[2]}</li><br>
-        4.<li class="btn btn-outline-light que10">${questions[9].options[3]}</li><br>
+        4.<li class="btn btn-success que10">${questions[9].options[3]}</li><br>
     </ul>`;
 
         let wroptions9=document.querySelectorAll("li.que10");
