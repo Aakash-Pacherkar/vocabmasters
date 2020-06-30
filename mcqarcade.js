@@ -23,8 +23,8 @@ let questions =[
     },
     {
         id:3,
-        question:"I can no longer satisfied with FICTITIOUS good conduct.",
-        answer:"Work of fiction",
+        question:"I can no longer be satisfied with FICTITIOUS good conduct.",
+        answer:"Works of fiction",
         options: [
             "Facts",
             "Imagination",
@@ -476,7 +476,7 @@ function showanswers()
                 }
             }
         }
-        
+
     tryagainbtn.classList.remove("hide");
 }
 
